@@ -8,21 +8,51 @@
 
 
 
-
 <style>
-    #dot {
-        position: fixed;
-        bottom: 0;
-        font-size: x-large;
+    html {
+        height: 100%;
     }
-
+    
+    body {
+        background-image: url(http://4.bp.blogspot.com/-ayq4TdqBris/T46BBtLQr7I/AAAAAAAALPc/MTHBep4bpAU/s1600/dark+wallpaper+3.jpgss);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 100%;
+        color: snow;
+    }
+    
+    a {
+        color: snow;
+        text-decoration: none;
+    }
+    
     #lv1 {
+        color: black;
         border: 1em;
         border-style: double;
         width: 100px;
         height: 50px;
         position: fixed;
         left: 50%;
+    }
+    
+    .moveDown {
+        animation-name: moveDown;
+        animation-duration: 4s;
+        position: fixed;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    
+    @keyframes moveDown {
+        from {
+            background-color: red;
+            top: 200px;
+        }
+        to {
+            background-color: yellow;
+            top: 1200px;
+        }
     }
 </style>
 
@@ -31,29 +61,31 @@
 
 
 <body>
-    <h1>Beware...David</h1>
-    <h2> Once you enter there's no return....</h2>
-    <button id='enterButton' >Enter...</button>
-    <div id='lv1' style="display:none;" >
+    <h1>Beware...</h1>
+    <h2> Once you enter there's no return...<a href="thesecondpage.html">.</a></h2>
+    <button id='enterButton'>Enter...</button>
+    <div id='lv1' style="display:none;">
         Level 1 - Enter the game
     </div>
 
 
 
 
-    <div id='dot'>.</div>
- 
 
 
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script>
-        $(document).ready(function(){
+        $(document).ready(function () {
             $("#enterButton").click(function () {
                 $("#lv1").toggle();
-             })
-    }); 
+            })
+
+            $("#lv1").click(function () {
+                $("#lv1").addClass("moveDown")
+            })
+        });
     </script>
 </body>
 
