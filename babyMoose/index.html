@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Baby Moose's peanut butter shop</title>
+
+    <script src="sweetalert.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="sweetalert.css">
+</head>
+
+<style>
+    img {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .narrow {
+        width: 70px;
+    }
+</style>
+
+<body>
+
+
+    <h1>Baby Moose's peanut butter shop</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Quantity</th>
+            </tr>
+        </thead>
+
+
+        <tbody>
+            <tr>
+                <td><img src='MeridianCrunchyLarge.jpg' /></td>
+                <td>&pound;2.00</td>
+                <td><input type="text" /></td>
+            </tr>
+
+            <tr>
+                <td><img class="narrow" src='WholeEarthCrunchy.jpg' /></td>
+                <td>&pound;1.43</td>
+                <td><input type="text" /></td>
+            </tr>
+
+        </tbody>
+
+    </table>
+
+    <button onclick='checkout();'>check out</button>
+
+    <script>
+        function checkout() {
+
+            swal({
+                title: "Sorry these are all Baby Moose's",
+                text: "Baby Moose's peanut butter shop",
+                imageUrl: "MeridianCrunchyLarge.jpg"
+            });
+        }
+
+    </script>
+
+
+</body>
+
+
+</html>
