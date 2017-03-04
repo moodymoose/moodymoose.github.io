@@ -5,22 +5,40 @@
     <title>The flat world</title>
 </head>
 
-    <style>
-        html {
-            height: 100%;
-        }
-        
-        body {
-            background-image: url(moose.png);
-            background-repeat: no-repeat;
-            background-size: 100% 100%;
-            height: 100%;
-            color: snow;
-        }
-    </style>
+<style>
+    html {
+        height: 100%;
+    }
+    
+    body {
+        background-image: url(moose.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 100%;
+        color: snow;
+    }
+</style>
+
 <body>
-<h1>The moose king</h1>
-<h2>bKTHHWhMNXN9dAEbhdfHTXJ5dATURdZHKSGVTAOFOdk</h2>
+    <h1>Themooseking</h1>
+    <h2>pD3UdLZTSEGVA8BFQFLTVEK7WFBSVhMGBcHtEGbIHHMTOGNIK8bWKLTGBCQxJLbDQKTSEGVx6KUKdPGBIW80J9bDVaKNKQHGW9FRJY3OEaVtJ6bJHVENDa</h2>
+    <input type="text" id="answer" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <script>
+        $().ready(function () {
+
+            $("#answer").keyup(function () {
+                var text = $("#answer").val();
+                if (text == "Cosmography") {
+                    document.location.href = "/sprout.html";
+                }
+            });
+        })
+
+    </script>
+
 </body>
 
 
