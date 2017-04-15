@@ -8,21 +8,45 @@
 <style>
     html {
         height: 100%;
+        width: 100%;
     }
     
     body {
-        background-image: url(moose.png);
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
         height: 100%;
         color: snow;
+    }
+    
+    .full {
+        background-size: 100% 100%;
+        width: 100%
+    }
+
+    .temp {
+        position: fixed;
+        left: 1150px;
+        top: 500px;
     }
 </style>
 
 <body>
-    <h1>Themooseking</h1>
-    <h2>pD3UdLZTSEGVA8BFQFLTVEK7WFBSVhMGBcHtEGbIHHMTOGNIK8bWKLTGBCQxJLbDQKTSEGVx6KUKdPGBIW80J9bDVaKNKQHGW9FRJY3OEaVtJ6bJHVENDa</h2>
-    <input type="text" id="answer" />
+
+  
+
+    <div id="wrapper">
+        <img class="full" id="layer1" src="moose.png">
+        <div id="layer2" style="position: absolute; top: 0; left: 0; padding-left: 20px;">
+            <h1>Themooseking</h1>
+            <h2>pD3UdLZTSEGVA8BFQFLTVEK7WFBSVhMGBcHtEGbIHHMTOGNIK8bWKLTGBCQxJLbDQKTSEGVx6KUKdPGBIW80J9bDVaKNKQHGW9FRJY3OEaVtJ6bJHVENDa</h2>
+            <input type="text" id="answer" />
+        </div>
+        <img class="full" id="layer3" style="position: absolute; top: 0; left: 0; opacity:0; *filter: Alpha(opacity=0);" usemap="#moosemap"
+            src="moose.png">
+    </div>
+
+    <map name="moosemap">
+        <area shape="rect" coords="1125,475,1200,550" alt="Eye" href="http://www.vigenere.net/">
+    </map>
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
@@ -36,7 +60,6 @@
                 }
             });
         })
-
     </script>
 
 </body>
