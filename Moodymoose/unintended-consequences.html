@@ -68,3 +68,20 @@
         Level 4 - hint: what languagues are they all in ?
     </div>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#enterButton").click(function () {
+                $("#lv1").toggle();
+            })
+
+            $("#lv1").click(function () {
+                $("#lv1").addClass("moveDown")
+            })
+        });
+    </script>
+</body>
+
+
+
+</html>
