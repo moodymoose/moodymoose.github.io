@@ -64,6 +64,7 @@
     <h1>Beware...</h1>
     <h2> Once you see the hint there's no return....</h2>
     <button id='enterButton'>Hint...</button>
+    <button id='entersprout'>Return to sprout</button>
     <div id='lv1' style="display:none;">
         Level 4 - Hint: what languagues are they all in ?
     </div>
@@ -74,13 +75,16 @@
             $("#enterButton").click(function () {
                 $("#lv1").toggle();
             })
-
+           $("#entersprout").click(function () {
+                $("#lv1").toggle();
+            })
             $("#lv1").click(function () {
                 $("#lv1").addClass("moveDown")
             })
         });
     </script>
     <img src="moose.gif"
+
 </body>
 
 
